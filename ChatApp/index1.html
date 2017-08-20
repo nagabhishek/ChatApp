@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#5</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/main1.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+	<body>
+      	<section class="login page" id="login-page">
+			<div class="form">
+				<h3 class="title">What's your nickname?</h3>
+				<input class="username" type="text"/>
+			</div>
+		</section>
+		<div class="clearfix">
+			<div class="active-container">
+				<span class="active"></span>
+				<span id="active-user-name"></span>
+			</div>
+			<section class="active-list">
+				<ul id="users"></ul>
+			</section>
+			<section class="chat-box">
+				<header class="top-bar">
+					<div class="left">
+					  <h5>Chat</h5>
+					</div>
+					<a class="right" id="close">X</a>
+				</header>
+				<ul class="discussion" id="messages">
+				</ul>
+				<hr>
+	  			<form name="comment" form="usrform">
+	  				<input type="text" id="m" placeholder="Enter text here..."/>
+	  			</form>
+			</section>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main1.js"></script>
+		<script>
+			$("#close").on('click', function (){
+				console.log('clicked close');
+				$(".chat-box").fadeOut('fast');
+
+			});
+
+			$(".active").on('click', function (){
+				console.log("active click");
+				$(".chat-box").fadeIn('fast');
+			})
+		</script>
+	</body>
+</html>

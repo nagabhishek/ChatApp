@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#5</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+		<style>
+			.chat-box{
+				margin: 0 auto;
+				width: 300px;
+				height: 290px;
+				border: 1px solid #EFEFEF;
+			}
+
+			ul{
+				padding-left: 0;
+				font-size: 12px;
+			}
+
+			header{
+				background-color: #666;
+			}
+
+			.top-bar {
+			  background: #666;
+			  position: relative;
+			  overflow: hidden; 
+			}
+
+			.top-bar::before {
+			  content: "";
+			  position: absolute;
+			  top: -100%;
+			  left: 0;
+			  right: 0;
+			  bottom: -100%;
+			  opacity: 0.25;
+			}
+
+			.top-bar > * {
+			  position: relative;
+			}
+
+			.discussion{
+				padding: 10px;
+				font-size: 12px;
+				overflow-y: auto;
+				height: 185px;
+			}
+
+			/*.discussion li {
+			  	display: flex;
+			}*/		
+
+			.self {
+			  justify-content: flex-end;
+			  align-items: flex-end;
+			}
+
+			.left{
+				margin-left: 10px;
+				font-weight: 900;
+				color: #FFF;
+			}
+
+			.other > .name{
+				color: blue;
+			}
+
+			.self > .name{
+				color: green;
+			}
+
+			input{
+				margin: 6px 4px;
+				width: 97%;
+				position: relative;
+				height: 46px;
+				padding-left: 5px;
+			}
+
+			/*input:focus{
+				border-color: #00FFFF;
+				box-shadow:1px #00FFFF;
+			}*/
+
+			.name{
+				width: 12px;
+			}
+
+			hr{
+				margin: 0px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<section class="chat-box">
+  
+			<header class="top-bar">
+				<div class="left">
+				  <span class="icon typicons-message"></span>
+				  <h5>Chat</h5>
+				</div>
+
+				<!-- <div class="right">
+				  <span class="glyphicon glyphicon-minus"></span>
+				  <span class="glyphicon glyphicon-remove"></span>
+				</div> -->
+			</header>
+  
+			<ul class="discussion">
+				<li class="other">
+				  <div class="name">Name1</div>
+				  <div class="messages">
+				    <p>yeah, they do early flights cause they connect with big airports.they wanna get u to your connection</p>
+				  </div>
+				</li>
+				<li class="self">
+				  <div class="name">Name2</div>
+				  <div class="messages">
+				    <p>That makes sense.It's a pretty small airport.</p>
+				  </div>
+				</li>
+				<li class="other">
+				  <div class="name">Name1</div>
+				  <div class="messages">
+				    <p>that mongodb thing looks good, huh? tiny master db, and huge document store</p>
+				  </div>
+				</li>
+				<li class="other">
+				  <div class="name">Name1</div>
+				  <div class="messages">
+				    <p>d dglb g m gkfbgfb? vdfvldfmv fdv,ldv koewfi..</p>
+				  </div>
+				</li>
+			</ul>
+			<hr>
+  			<form name="comment" form="usrform">
+  				<input type="text" placeholder="Enter text here..."/>
+  			</form>
+		</section>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

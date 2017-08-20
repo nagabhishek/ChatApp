@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#5</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/main.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+	<body>
+		<div class="my-container">
+			<div class="list">
+		      	<h3 class="text-center">Active Users</h3>
+		      	<ul id="users"></ul>
+		    </div>
+	      	<div class="message">
+	      		<h3 class="text-center">Message</h3>
+	      		<div id="mssg-area">
+	      			<ul id="messages"></ul>
+	      		</div>
+	      		<form>
+					<input type="text" id="m" class="form-control" placeholder="Enter your message..."/>
+			    </form>
+	      	</div>
+	      	<div class='chat'>
+	      		<h3>Chat</h3>
+	      		<div>
+	      			<ul id="chat-mssg"></ul>
+	      		</div>
+	      		<form id='chat-form'>
+	      			<input type=="text" id="chat-txt" class="form-control"/>
+	      		</form>
+	      	</div>
+		    <div class="login page">
+				<div class="form">
+					<h3 class="title">What's your nickname?</h3>
+					<input class="username" type="text"/>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>

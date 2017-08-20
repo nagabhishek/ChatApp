@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#5</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/main1.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+	<body>
+		<div class="my-container">
+	      	<!-- <ul id="users"></ul> -->
+			<section class="active-list">
+				<ul class="discussion">
+					<li>
+						<span class="active"></span>
+						<a href="#">Name1</a>
+					</li>
+					<li>
+						<span class="active"></span>
+					  	<a href="#">Name2</a>
+					</li>
+					<li>
+						<span class="active"></span>
+					  	<a href="#">Name3</a>
+					</li>
+					<li>
+						<span class="active"></span>
+					  	<a href="#">Name4</a>
+					</li>
+				</ul>
+			</section>
+			<section class="chat-box">
+				<header class="top-bar">
+					<div class="left">
+					  <h5>Chat</h5>
+					</div>
+					<a class="right">X</a>
+				</header>
+	  
+				<ul class="discussion">
+					<li class="other">
+					  <div class="name">Name1:</div>
+					  <div class="messages">
+					    <p>yeah, they do early flights cause they connect with big airports.they wanna get u to your connection</p>
+					  </div>
+					</li>
+					<li class="self">
+					  <div class="name">Name2:</div>
+					  <div class="messages">
+					    <p>That makes sense.It's a pretty small airport.</p>
+					  </div>
+					</li>
+					<li class="other">
+					  <div class="name">Name1:</div>
+					  <div class="messages">
+					    <p>that mongodb thing looks good, huh? tiny master db, and huge document store</p>
+					  </div>
+					</li>
+					<li class="other">
+					  <div class="name">Name1:</div>
+					  <div class="messages">
+					    <p>d dglb g m gkfbgfb? vdfvldfmv fdv,ldv koewfi..</p>
+					  </div>
+					</li>
+				</ul>
+				<hr>
+	  			<form name="comment" form="usrform">
+	  				<input type="text" placeholder="Enter text here..."/>
+	  			</form>
+			</section>
+		</div>	
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(".right").on('click', function (){
+				console.log('clicked close');
+				$(".chat-box").fadeOut('fast');
+
+			});
+
+			$(".active").on('click', function (){
+				console.log("active click");
+				$(".chat-box").fadeIn('fast');
+			})
+
+			$("#messages").change(function() {
+			    console.log("inside change function");
+			    var textarea = document.getElementById('messages');
+			    textarea.scrollTop = textarea.scrollHeight;
+			 });
+
+			var textarea = $(".discussion");
+			textarea.scrollTop = textarea.scrollHeight;
+		</script>
+	</body>
+</html>

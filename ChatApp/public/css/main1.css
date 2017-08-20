@@ -1,0 +1,158 @@
+.chat-box{
+	margin: 25px 10px;
+	width: 255px;
+	height: 290px;
+	border: 1px solid #EFEFEF;
+	float: left;
+}
+
+.discussion > li > a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #000;
+}
+
+.right{
+	position: absolute !important;
+	color: #FFF;
+	top: 7px;
+	right: 10px;
+	font-weight: 900;
+}
+
+.right:hover{
+	color: #FFF;
+}
+
+ul{
+	padding-left: 0;
+	font-size: 12px;
+}
+
+header{
+	background-color: #666;
+}
+
+.top-bar {
+  background: #666;
+  position: relative;
+  overflow: hidden; 
+}
+
+.top-bar::before {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  opacity: 0.25;
+}
+
+.discussion{
+	padding: 10px;
+	font-size: 12px;
+	overflow-y: auto;
+	height: 185px;
+	font-weight: 900;
+}
+
+.active-list{
+	padding: 10px;
+	overflow-y: auto;
+	margin: 25px 10px;
+	width: 200px;
+	height: 290px;
+	border: 1px solid #EFEFEF;
+	float: left;
+	font-size: 14px;
+	clear: both;
+}
+
+.active-list ul li a{
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+}
+
+.self {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.left{
+	margin-left: 10px;
+	font-weight: 900;
+	color: #FFF;
+}
+
+.other > .name{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: orange;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.self > .name{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: green;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+input{
+	margin: 6px 4px !important;
+	width: 97%;
+	position: relative;
+	height: 46px;
+	padding-left: 5px;
+}
+
+.active-container{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.name{
+	width: 12px;
+}
+
+hr{
+	margin: 0px !important;
+}
+
+.active{
+	display: inline-block;
+	background-color: #40C012;
+	height: 12px;
+	width: 12px;
+	border-radius: 7px;
+}
+
+.header-active{
+	background-color: #40C012;
+	height: 12px;
+	width: 12px;
+	border-radius: 7px;
+}
+
+.login.page {
+  	background-color: antiquewhite;
+  	width: 450px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	text-align: center;
+}
+
+.form input{
+	text-align: center;
+	height: 35px;
+}
+
+.login.page .form {
+	padding: 45px;
+}

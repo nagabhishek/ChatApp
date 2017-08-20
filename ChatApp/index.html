@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Task#5</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/main.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+	<body>
+		<div class="my-container">
+			<div class="list">
+		      	<h3 class="text-center">Active Users</h3>
+		      	<ul id="users"></ul>
+		    </div>
+	      	<div class="message">
+	      		<h3 class="text-center">Open Chat</h3>
+	      		<div id="mssg-area">
+	      			<ul id="messages"></ul>
+	      		</div>
+	      		<form>
+					<input id="m" type="text" class="form-control" placeholder="Enter your message...."/>
+			    </form>
+	      	</div>
+		    <div id="login-page">
+				<div class="form">
+					<h3 class="title">What's your nickname?</h3>
+					<input class="username" type="text"/>
+				</div>
+			</div>
+			<div id="popup_box">
+			    <div>
+		      		<h3 class="text-center">Chat</h3>
+		      		<div id="chat-msg-area">
+		      			<ul id="chat-mssg"></ul>
+		      		</div>
+		      		<form>
+						<input id="chat-text" type="text" class="form-control" placeholder="Enter your message...."/>
+				    </form>
+	      		</div>
+			    <a id="popupBoxClose">X</a>    
+			</div>
+		</div>	
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
